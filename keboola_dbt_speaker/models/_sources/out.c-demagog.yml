@@ -1,0 +1,47 @@
+version: 2
+sources:
+    - name: out.c-demagog
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_TARGET1_DATABASE") }}'
+      schema: out.c-demagog
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: speaker_liars_top10
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: speaker_statements
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: speaker_statement_sentiment
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns: []
+        - name: speaker_stats
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null

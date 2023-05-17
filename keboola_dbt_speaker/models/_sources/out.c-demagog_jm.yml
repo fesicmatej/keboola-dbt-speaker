@@ -1,0 +1,23 @@
+version: 2
+sources:
+    - name: out.c-demagog_jm
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_TARGET1_DATABASE") }}'
+      schema: out.c-demagog_jm
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: DEMO_2
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns: []
+        - name: speakers_count
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns: []

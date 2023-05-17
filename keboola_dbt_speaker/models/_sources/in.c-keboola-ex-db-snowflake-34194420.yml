@@ -1,0 +1,33 @@
+version: 2
+sources:
+    - name: in.c-keboola-ex-db-snowflake-34194420
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_TARGET1_DATABASE") }}'
+      schema: in.c-keboola-ex-db-snowflake-34194420
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: event
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"EV_KEY"'
+              tests:
+                - unique
+                - not_null
+        - name: event-relation-test
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns: []
+        - name: eventrelation
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns: []
