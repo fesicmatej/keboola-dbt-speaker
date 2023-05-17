@@ -1,0 +1,27 @@
+[0m14:42:55.926240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C1252F7280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C120E7F3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C120E74E20>]}
+
+
+============================== 14:42:55.937588 | af63dfb0-b1c9-4aff-941c-a6d16dcbdcea ==============================
+[0m14:42:55.937588 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:42:55.940364 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\432477\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:43:23.046671 [debug] [MainThread]: Starter project path: c:\users\432477\onedrive - erste group\architecture\20230517 dbt keboola\keboola-dbt-speaker\.dbtenv\lib\site-packages\dbt\include\starter_project
+[0m14:45:19.922750 [info ] [MainThread]: Profile keboola_dbt_speaker written to C:\Users\432477\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:45:19.926955 [info ] [MainThread]: 
+Your new dbt project "keboola_dbt_speaker" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:45:19.934516 [debug] [MainThread]: Command `dbt init` succeeded at 14:45:19.934516 after 144.13 seconds
+[0m14:45:19.935516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C1252F7280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C127295550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C1272BE940>]}
+[0m14:45:19.936515 [debug] [MainThread]: Flushing usage events
